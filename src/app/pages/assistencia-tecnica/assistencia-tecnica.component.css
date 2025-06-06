@@ -1,0 +1,14 @@
+.title {
+  margin-top: 50px;
+  margin-left: 16px;
+  font-weight: 700;
+}
+
+.line-glow {
+  margin-left: 16px;
+  width: 300px;
+  height: 4px;
+  border-radius: 10px;
+  background: #059bcd;
+  box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
+}

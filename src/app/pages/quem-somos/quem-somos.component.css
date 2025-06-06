@@ -1,0 +1,44 @@
+.title {
+  margin-top: 50px;
+  margin-left: 16px;
+  /* text-align: center; */
+  font-weight: 700;
+}
+
+.line-glow {
+  margin-left: 16px;
+  width: 193px;
+  height: 4px;
+  border-radius: 10px;
+  background: #059bcd;
+  box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.menu {
+  margin-top: 20px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.active {
+  color: #059bcd;
+  font-weight: 700;
+}
+
+a {
+  font-size: 18px;
+}

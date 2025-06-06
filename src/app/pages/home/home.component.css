@@ -1,0 +1,106 @@
+.btn-home {
+  color: white;
+  background: #059bcd;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-home:hover {
+  background: #047ba1;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 55px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.title-slider {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.container-logo-slider {
+  margin-top: 35px;
+}
+.logo-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.logo-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo-track img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.logo-track img:hover {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
