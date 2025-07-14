@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { CardCompraComponent } from "./card-compra/card-compra.component";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -10,7 +10,10 @@ import { FormsModule } from "@angular/forms";
   templateUrl: "./comprar.component.html",
   styleUrl: "./comprar.component.css",
 })
-export class ComprarComponent {
+export class ComprarComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
   produtos = [
     {
       id: 1,
