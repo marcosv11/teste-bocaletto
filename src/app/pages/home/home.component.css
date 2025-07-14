@@ -28,6 +28,7 @@ h3 {
 }
 
 .title-slider {
+  margin-top: 150px;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
@@ -36,6 +37,7 @@ h3 {
 
 .container-logo-slider {
   margin-top: 35px;
+  margin-bottom: 35px;
 }
 .logo-slider {
   position: relative;
@@ -81,15 +83,22 @@ h3 {
   width: max-content;
   animation: scroll 30s linear infinite;
   align-items: center;
-  z-index: 1;
 }
 
 .logo-track img {
-  height: 70px;
-  width: auto;
+  height: 80px;
+  max-width: 150px;
   object-fit: contain;
+  object-position: center;
   opacity: 0.8;
   transition: opacity 0.3s;
+  background-color: transparent;
+}
+.carousel-img {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .logo-track img:hover {
@@ -103,4 +112,76 @@ h3 {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.custom-carousel-btn {
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(17, 17, 17, 0.337); /* Cor do fundo do botão */
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: -60px; /* Joga o botão para fora da imagem */
+}
+
+.carousel-control-next {
+  right: -60px; /* Joga o botão para fora da imagem */
+}
+
+/* Deixa o ícone branco dentro do botão preto */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.text-pink {
+  color: deeppink;
+}
+.card {
+  border-radius: 12px;
+  border: 1px solid #e4e4e4 !important;
+}
+
+.text-pink {
+  color: #059bcd;
+}
+.icon {
+  margin-bottom: 5px;
+}
+
+/* Ícone com transição ao trocar */
+.icon.transition {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.icon.open {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Container animado */
+.collapse-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.collapse-container.open {
+  max-height: 500px; /* suficiente pro conteúdo, ajuste se necessário */
+  opacity: 1;
+}
+
+.duvida-container {
+  background: linear-gradient(
+    to right,
+    #047ba1,
+    #059bcd
+  ); /* ajuste da cor final conforme print */
+  border-radius: 16px;
+  color: white;
 }

@@ -1,0 +1,10 @@
+<div class="card-compra">
+  <img [src]="produto.imagem" alt="{{ produto.nome }}" class="produto-img" />
+  <h3>{{ produto.nome }}</h3>
+
+  <!-- <p class="preco">{{ produto.preco }}</p> -->
+
+  <a [routerLink]="['/comprar-detalhes', produto.id]">
+    <button class="btn-comprar">COMPRAR</button>
+  </a>
+</div>

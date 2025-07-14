@@ -34,8 +34,7 @@
 }
 
 .card {
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: 0 1px 4px 1px #21212133;
 }
 
 .sub-title {
@@ -69,4 +68,28 @@
 
 .card-title {
   font-weight: 700;
+}
+
+.line-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center; /* centraliza horizontalmente */
+  text-align: center;
+  height: 100%; /* necessário se quiser centralização vertical total */
+}
+
+.card-img-top {
+  height: 250px; /* ou qualquer altura que você quiser */
+  object-fit: cover; /* corta a imagem e mantém proporção */
+  width: 100%; /* garante que ocupe toda a largura */
+}
+
+.margin {
+  margin-top: 120px;
 }

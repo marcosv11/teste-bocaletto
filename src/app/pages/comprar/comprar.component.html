@@ -1,2 +1,54 @@
 <h3 class="title">COMPRAR</h3>
 <div class="line-glow"></div>
+
+<!-- CONTAINER GERAL -->
+<div class="container mb-4 mt-5">
+  <!-- LINHA DA BUSCA E TEXTO -->
+  <div class="row align-items-center">
+    <!-- BARRA DE BUSCA -->
+    <div class="col-md-6">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar produto..."
+          [(ngModel)]="filtro"
+        />
+        <span class="input-group-text">
+          <i class="bi bi-search"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LISTA DE PRODUTOS OU MENSAGEM -->
+  <div class="container my-5">
+    <div class="row">
+      <ng-container *ngIf="produtosFiltrados.length > 0; else nenhumProduto">
+        <div class="col-md-3 mb-4" *ngFor="let produto of produtosFiltrados">
+          <app-card-compra [produto]="produto"></app-card-compra>
+        </div>
+      </ng-container>
+
+      <!-- MENSAGEM CASO NENHUM PRODUTO SEJA ENCONTRADO -->
+      <ng-template #nenhumProduto>
+        <div class="col-md-6 mt-4" *ngIf="filtro.trim()">
+          <p class="mb-2">
+            Não encontrou o produto que procura?
+            <strong>
+              <a
+                [href]="
+                  'https://wa.me/5511989861526?text=' +
+                  'Olá, queria consultar um produto'
+                "
+                target="_blank"
+              >
+                Fale com a gente no WhatsApp!
+              </a>
+            </strong>
+          </p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
