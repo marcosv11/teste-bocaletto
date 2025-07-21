@@ -12,6 +12,22 @@
   /* background: #fde421; */
 }
 
+.btn-home {
+  color: white;
+  background: #059bcd;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-home:hover {
+  background: #047ba1;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
 .navbar-logo {
   height: 60px;
   width: auto;

@@ -1,0 +1,42 @@
+.bg-ciano {
+  background: linear-gradient(135deg, #00bfff, #059bcd);
+}
+
+.btn-home {
+  background: linear-gradient(135deg, #00bfff, #ff00ff);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.btn-home:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.line-glow {
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, #00bfff, #ff00ff);
+  border-radius: 4px;
+  box-shadow: 0 0 8px #00bfff;
+}
+
+.btn-home {
+  color: white;
+  background: #059bcd;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-home:hover {
+  transform: scale(1.05);
+  color: white;
+}
