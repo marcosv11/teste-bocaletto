@@ -1,9 +1,20 @@
-<app-nav-bar></app-nav-bar>
+<div class="decor-wrapper">
+  <!-- Formas geométricas de fundo (em azul) -->
+  <div class="decor-left"></div>
+  <div class="decor-right"></div>
 
-<div class="container">
-  <app-whatsap-button-float></app-whatsap-button-float>
+  <!-- Conteúdo da aplicação -->
+  <div class="content-container">
+    <app-nav-bar></app-nav-bar>
+
+    <div class="container">
+      <app-whatsap-button-float></app-whatsap-button-float>
+    </div>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
 </div>
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>

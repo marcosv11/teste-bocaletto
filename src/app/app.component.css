@@ -1,0 +1,41 @@
+.decor-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: white;
+  overflow-x: hidden;
+}
+
+.decor-left,
+.decor-right {
+  position: fixed;
+  background-position: top -50px; /* 👈 move horizontalmente para a esquerda */
+
+  top: 0;
+  width: 30vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 100%;
+  background-repeat: repeat-y; /* 🧠 repete na vertical */
+  background-position: top center;
+  background-size: cover; /* 🧠 cobre a largura lateral */
+
+  pointer-events: none;
+}
+
+/* Formas azuis no lado esquerdo */
+.decor-left {
+  left: 0;
+  background-image: url(../assets/one.png);
+}
+
+/* Formas azuis no lado direito */
+.decor-right {
+  right: 0;
+  background-image: url(../assets/tea.png);
+}
+
+/* Conteúdo principal por cima */
+.content-container {
+  position: relative;
+  z-index: 1;
+}
