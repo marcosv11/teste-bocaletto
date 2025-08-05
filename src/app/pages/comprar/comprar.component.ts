@@ -425,9 +425,25 @@ export class ComprarComponent implements OnInit {
     },
     {
       id: 26,
-      nome: "CARTUCHO CANON PFI-107",
+      nome: "CARTUCHO CANON PFI-107 PRETO",
       imagem:
-        "https://images.tcdn.com.br/img/img_prod/279096/cartuchodetintacanonpfi102bkpreto_882_1_20190711095959.jpg",
+        "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi107_130ml_3587676_6_20190918111735.jpg",
+      compatibilidade: [
+        "Canon imagePROGRAF IPF-670",
+        "Canon imagePROGRAF IPF-680",
+        "Canon imagePROGRAF IPF-685",
+        "Canon imagePROGRAF IPF-780",
+        "Canon imagePROGRAF IPF-770",
+        "Canon imagePROGRAF IPF-785",
+      ],
+      descricao:
+        "Cartucho de tinta Canon PFI-107 para impressoras de grande formato imagePROGRAF. Imagens precisas e profissionais.",
+    },
+    {
+      id: 26,
+      nome: "CARTUCHO CANON PFI-107 MBK",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi107_130ml_3587676_7_20190918111735.jpg",
       compatibilidade: [
         "Canon imagePROGRAF IPF-670",
         "Canon imagePROGRAF IPF-680",
@@ -441,7 +457,7 @@ export class ComprarComponent implements OnInit {
     },
     {
       id: 27,
-      nome: "CARTUCHO CANON PFI-102",
+      nome: "CARTUCHO CANON PFI-102 PRETO",
       imagem:
         "https://www.creativecopias.com.br/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/9/8/9889_ampliada.jpg",
       compatibilidade: [
@@ -466,6 +482,31 @@ export class ComprarComponent implements OnInit {
     },
     {
       id: 28,
+      nome: "CARTUCHO CANON PFI-102 MBK",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi102_130ml_3587384_7_20190918102644.jpg",
+      compatibilidade: [
+        "Canon imagePROGRAF iPF500",
+        "Canon imagePROGRAF iPF510",
+        "Canon imagePROGRAF iPF600",
+        "Canon imagePROGRAF iPF605",
+        "Canon imagePROGRAF iPF610",
+        "Canon imagePROGRAF iPF620",
+        "Canon imagePROGRAF iPF650",
+        "Canon imagePROGRAF iPF655",
+        "Canon imagePROGRAF iPF700",
+        "Canon imagePROGRAF iPF710",
+        "Canon imagePROGRAF iPF720",
+        "Canon imagePROGRAF iPF750",
+        "Canon imagePROGRAF iPF755",
+        "Canon imagePROGRAF iPF760",
+        "Canon imagePROGRAF iPF765",
+      ],
+      descricao:
+        "Cartucho Canon PFI-102 com tinta pigmentada de alta precisão. Ideal para projetos técnicos e gráficos.",
+    },
+    {
+      id: 29,
       nome: "CARTUCHO HP 664XL",
       imagem:
         "https://br-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/F/6/F6V31AB-1_T1680778875.png",
@@ -489,8 +530,33 @@ export class ComprarComponent implements OnInit {
         "Cartucho de tinta HP 664XL com alto rendimento. Ideal para quem busca economia e qualidade de impressão.",
     },
     {
-      id: 29,
-      nome: "CARTUCHO HP 662XL",
+      id: 30,
+      nome: "CARTUCHO HP 664XL Colorido",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/F/6/F6V30AB-1_T1680778867.png",
+      compatibilidade: [
+        "HP Deskjet Ink Advantage 1115",
+        "HP Deskjet Ink Advantage 2136",
+        "HP Deskjet Ink Advantage 3636",
+        "HP Deskjet Ink Advantage 3836",
+        "HP Deskjet Ink Advantage 4536",
+        "HP Deskjet Ink Advantage 3635",
+        "HP Deskjet Ink Advantage 3776",
+        "HP Deskjet Ink Advantage 3788",
+        "HP Deskjet Ink Advantage 3790",
+        "HP Deskjet Ink Advantage 2676",
+        "HP Deskjet Ink Advantage 3786",
+        "HP Deskjet Ink Advantage 5076",
+        "HP Deskjet Ink Advantage 5276",
+        "HP Deskjet Ink Advantage 4676",
+      ],
+      descricao:
+        "Cartucho de tinta HP 664XL colorido de alto rendimento. Perfeito para quem precisa imprimir com cores vivas, qualidade e economia.",
+    },
+
+    {
+      id: 31,
+      nome: "CARTUCHO HP 662XL PRETO",
       imagem:
         "https://br-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/C/Z/CZ105AB-1_T1680778641.png",
       compatibilidade: [
@@ -521,11 +587,46 @@ export class ComprarComponent implements OnInit {
         "HP Deskjet Ink Advantage 4648",
       ],
       descricao:
-        "Cartucho HP 662XL com tinta de qualidade para impressões nítidas e confiáveis no dia a dia.",
+        "CARTUCHO HP 662XL com tinta de qualidade para impressões nítidas e confiáveis no dia a dia.",
     },
     {
-      id: 30,
-      nome: "CARTUCHO HP 954XL",
+      id: 32,
+      nome: "CARTUCHO HP 662XL COLORIDO",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/C/Z/CZ106AB-1_T1680778646.jpg",
+      compatibilidade: [
+        "HP Deskjet Ink Advantage 1015",
+        "HP Deskjet Ink Advantage 1510",
+        "HP Deskjet Ink Advantage 1518",
+        "HP Deskjet Ink Advantage 2516",
+        "HP Deskjet Ink Advantage 2546",
+        "HP Deskjet Ink Advantage 2646",
+        "HP Deskjet Ink Advantage 3516",
+        "HP Deskjet Ink Advantage 3546",
+        "HP Deskjet Ink Advantage 4645",
+        "HP Deskjet Ink Advantage 2510",
+        "HP Deskjet Ink Advantage 2540",
+        "HP Deskjet Ink Advantage 2548",
+        "HP Deskjet Ink Advantage 3510",
+        "HP Deskjet Ink Advantage 3540",
+        "HP Deskjet Ink Advantage 4515",
+        "HP Deskjet Ink Advantage 4646",
+        "HP Deskjet Ink Advantage 1016",
+        "HP Deskjet Ink Advantage 1516",
+        "HP Deskjet Ink Advantage 2515",
+        "HP Deskjet Ink Advantage 2545",
+        "HP Deskjet Ink Advantage 2645",
+        "HP Deskjet Ink Advantage 3515",
+        "HP Deskjet Ink Advantage 3545",
+        "HP Deskjet Ink Advantage 4640",
+        "HP Deskjet Ink Advantage 4648",
+      ],
+      descricao:
+        "CARTUCHO HP 662XL com tinta de qualidade para impressões nítidas e confiáveis no dia a dia.",
+    },
+    {
+      id: 33,
+      nome: "CARTUCHO HP 954XL PRETO",
       imagem:
         "https://br-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/L/0/L0S71AB-1_T1680779434.png",
       compatibilidade: [
@@ -545,15 +646,107 @@ export class ComprarComponent implements OnInit {
         "Cartucho de tinta HP 954XL de alta capacidade. Impressões com cores nítidas e vibrantes em documentos empresariais.",
     },
     {
-      id: 31,
-      nome: "CARTUCHO HP 964XL",
+      id: 34,
+      nome: "CARTUCHO HP 954XL CIANO",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/L/0/L0S62AB-1_T1680779414.png",
+      compatibilidade: [
+        "Officejet Pro 8700",
+        "Officejet Pro 8710",
+        "Officejet Pro 8715",
+        "Officejet Pro 7720",
+        "Officejet Pro 7740",
+        "Officejet Pro 8720",
+        "Officejet Pro 8716",
+        "Officejet Pro 8725",
+        "Officejet Pro 8210",
+        "Officejet Pro 8740",
+        "Officejet Pro P27724DW",
+      ],
+      descricao:
+        "Cartucho HP 954XL na cor CIANO. Alta capacidade e qualidade profissional para impressões com tons vivos e duradouros.",
+    },
+    {
+      id: 35,
+      nome: "CARTUCHO HP 954XL MAGENTA",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/L/0/L0S65AB-1_T1680779421.png",
+      compatibilidade: [
+        "Officejet Pro 8700",
+        "Officejet Pro 8710",
+        "Officejet Pro 8715",
+        "Officejet Pro 7720",
+        "Officejet Pro 7740",
+        "Officejet Pro 8720",
+        "Officejet Pro 8716",
+        "Officejet Pro 8725",
+        "Officejet Pro 8210",
+        "Officejet Pro 8740",
+        "Officejet Pro P27724DW",
+      ],
+      descricao:
+        "Cartucho HP 954XL na cor MAGENTA. Ideal para impressões com cores intensas e excelente definição em materiais empresariais.",
+    },
+    {
+      id: 36,
+      nome: "CARTUCHO HP 954XL AMARELO",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/L/0/L0S68AB-1_T1680779427.png",
+      compatibilidade: [
+        "Officejet Pro 8700",
+        "Officejet Pro 8710",
+        "Officejet Pro 8715",
+        "Officejet Pro 7720",
+        "Officejet Pro 7740",
+        "Officejet Pro 8720",
+        "Officejet Pro 8716",
+        "Officejet Pro 8725",
+        "Officejet Pro 8210",
+        "Officejet Pro 8740",
+        "Officejet Pro P27724DW",
+      ],
+      descricao:
+        "Cartucho HP 954XL na cor amarela. Rendimento elevado com qualidade superior para gráficos, tabelas e documentos coloridos.",
+    },
+
+    {
+      id: 37,
+      nome: "CARTUCHO HP 964XL PRETO",
       imagem:
         "https://br-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/3/J/3JA57AL-1_T1680771940.png",
       compatibilidade: ["HP OfficeJet Pro 9010", "HP OfficeJet Pro 9020"],
       descricao:
         "Cartucho HP 964XL com tecnologia de tinta pigmentada para impressões duradouras e resistentes à água.",
     },
+    {
+      id: 38,
+      nome: "CARTUCHO HP 964XL CIANO",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/3/J/3JA54AL-1_T1680771928.png",
+      compatibilidade: ["HP OfficeJet Pro 9010", "HP OfficeJet Pro 9020"],
+      descricao:
+        "Cartucho HP 964XL na cor CIANO, com tinta pigmentada que garante impressões vívidas, duráveis e resistentes à água.",
+    },
+    {
+      id: 349,
+      nome: "CARTUCHO HP 964XL MAGENTA",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/3/J/3JA55AL-1_T1680771932.png",
+      compatibilidade: ["HP OfficeJet Pro 9010", "HP OfficeJet Pro 9020"],
+      descricao:
+        "Cartucho HP 964XL na cor MAGENTA, ideal para impressões com cores intensas e resistência à água e ao desbotamento.",
+    },
+    {
+      id: 40,
+      nome: "CARTUCHO HP 964XL AMARELO",
+      imagem:
+        "https://br-media.hptiendaenlinea.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/3/J/3JA56AL-1_T1680771936.png",
+      compatibilidade: ["HP OfficeJet Pro 9010", "HP OfficeJet Pro 9020"],
+      descricao:
+        "Cartucho HP 964XL na cor amarela, com alto rendimento e excelente definição para gráficos e imagens coloridas.",
+    },
   ];
+
   filtro: string = "";
 
   get produtosFiltrados() {

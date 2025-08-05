@@ -19,29 +19,64 @@
 
   <div class="p-4" style="width: 70%">
     <ng-container [ngSwitch]="selectedIndex">
-      <div *ngSwitchCase="0">
-        <h4>Equipe</h4>
-        <p>Aqui vai a descrição da equipe com fotos.</p>
-      </div>
       <div *ngSwitchCase="1">
-        <h4>Dados cadastrais</h4>
-        <p>Aqui vão os dados cadastrais.</p>
+        <h4>Diferenciais</h4>
+        <p>
+          <strong>Atendimento rápido e eficiente</strong>, com retorno ágil para
+          garantir a satisfação de cada cliente.
+        </p>
+
+        <p>
+          <strong>Equipe comercial experiente</strong>, preparada para entender
+          e indicar soluções alinhadas às necessidades específicas de cada
+          negócio.
+        </p>
+
+        <p>
+          <strong>Suporte técnico qualificado</strong>, com profissionais
+          treinados para orientar na instalação e no uso dos equipamentos.
+        </p>
+
+        <p>
+          <strong>Estoque completo e variado</strong>, com pronta entrega para
+          diferentes tipos de demandas.
+        </p>
+
+        <p>
+          <strong>Atendimento remoto opcional</strong>, para auxiliar na
+          instalação de equipamentos e esclarecer dúvidas gerais.
+        </p>
       </div>
-      <div *ngSwitchCase="2">
-        <h4>História</h4>
-        <p>Conte a história da empresa aqui.</p>
-      </div>
-      <div *ngSwitchCase="3">
-        <h4>Missão, Visão, Propósito e Valores</h4>
-        <p>Insira até quando precisa enviar as informações...</p>
-      </div>
-      <div *ngSwitchCase="4">
+
+      <div *ngSwitchCase="0">
         <h4>Política Comercial</h4>
-        <p>Detalhes da política comercial.</p>
-      </div>
-      <div *ngSwitchCase="5">
-        <h4>Política de Garantia</h4>
-        <p>Detalhes sobre garantia.</p>
+
+        <p>
+          <strong>Razão Social:</strong> Bocaletto Com. Máquinas e Suprim. Inf.
+          Ltda.
+        </p>
+
+        <p><strong>Nome Fantasia:</strong> Bocaletto</p>
+
+        <p><strong>Endereço:</strong> Rua Bôrtolo Basso, Nº 95 – Sala 02</p>
+
+        <p><strong>Bairro:</strong> Centro</p>
+
+        <p><strong>Cidade:</strong> São Bernardo do Campo</p>
+
+        <p><strong>Estado:</strong> SP</p>
+
+        <p><strong>País:</strong> Brasil</p>
+
+        <p><strong>CEP:</strong> 09720-590</p>
+
+        <p><strong>Telefone:</strong> (11) 2897-4256</p>
+
+        <p><strong>Celular:</strong> (11) 98986-1526</p>
+
+        <p><strong>CNPJ:</strong> 05.006.852/0001-00</p>
+
+        <p><strong>Inscrição Estadual:</strong> 635.504.599.110</p>
       </div>
       <div *ngSwitchDefault>
         <p>Selecione um item do menu para ver o conteúdo.</p>

@@ -14,6 +14,10 @@
   box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
 }
 
+h4 {
+  font-weight: 700;
+}
+
 .nav-link {
   cursor: pointer;
   transition: background-color 0.2s ease;
