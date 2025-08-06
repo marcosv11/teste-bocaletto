@@ -66,7 +66,7 @@ export const produtos = [
   },
   {
     id: 6,
-    nome: "TONER-CE255X",
+    nome: "TONER HP CE255X",
     imagem:
       "https://cdn.awsli.com.br/2500x2500/109/109824/produto/3493855/a558204ae7.jpg",
     compatibilidade: [
@@ -440,6 +440,54 @@ export const produtos = [
       "Cartucho de tinta Canon PFI-107 para impressoras de grande formato imagePROGRAF. Imagens precisas e profissionais.",
   },
   {
+    id: 500,
+    nome: "CARTUCHO CANON PFI-107 CIANO",
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi107_130ml_3587676_4_20190918111734.jpg",
+    compatibilidade: [
+      "Canon imagePROGRAF IPF-670",
+      "Canon imagePROGRAF IPF-680",
+      "Canon imagePROGRAF IPF-685",
+      "Canon imagePROGRAF IPF-780",
+      "Canon imagePROGRAF IPF-770",
+      "Canon imagePROGRAF IPF-785",
+    ],
+    descricao:
+      "Cartucho de tinta Canon PFI-107 Ciano para impressoras imagePROGRAF. Cores vivas e ótima precisão em projetos gráficos.",
+  },
+  {
+    id: 501,
+    nome: "CARTUCHO CANON PFI-107 MAGENTA",
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi107_130ml_3587676_5_20190918111735.jpg",
+    compatibilidade: [
+      "Canon imagePROGRAF IPF-670",
+      "Canon imagePROGRAF IPF-680",
+      "Canon imagePROGRAF IPF-685",
+      "Canon imagePROGRAF IPF-780",
+      "Canon imagePROGRAF IPF-770",
+      "Canon imagePROGRAF IPF-785",
+    ],
+    descricao:
+      "Cartucho de tinta Canon PFI-107 Magenta para impressoras de grande formato. Garante tons precisos e qualidade superior.",
+  },
+  {
+    id: 502,
+    nome: "CARTUCHO CANON PFI-107 AMARELO",
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi107_130ml_3587676_3_20190918111734.jpg",
+    compatibilidade: [
+      "Canon imagePROGRAF IPF-670",
+      "Canon imagePROGRAF IPF-680",
+      "Canon imagePROGRAF IPF-685",
+      "Canon imagePROGRAF IPF-780",
+      "Canon imagePROGRAF IPF-770",
+      "Canon imagePROGRAF IPF-785",
+    ],
+    descricao:
+      "Cartucho de tinta Canon PFI-107 Amarelo para impressoras Canon imagePROGRAF. Alta definição e fidelidade de cor.",
+  },
+  {
     id: 27,
     nome: "CARTUCHO CANON PFI-102 PRETO",
     imagem:
@@ -488,6 +536,71 @@ export const produtos = [
     ],
     descricao:
       "Cartucho Canon PFI-102 com tinta pigmentada de alta precisão. Ideal para projetos técnicos e gráficos.",
+  },
+
+  {
+    id: 511,
+    nome: "CARTUCHO CANON PFI-102 CIANO",
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi102_130ml_3587384_5_20190918102643.jpg",
+    compatibilidade: [
+      "Canon imagePROGRAF iPF500",
+      "Canon imagePROGRAF iPF510",
+      "Canon imagePROGRAF iPF600",
+      "Canon imagePROGRAF iPF605",
+      "Canon imagePROGRAF iPF610",
+      "Canon imagePROGRAF iPF650",
+      "Canon imagePROGRAF iPF655",
+      "Canon imagePROGRAF iPF700",
+      "Canon imagePROGRAF iPF710",
+      "Canon imagePROGRAF iPF720",
+      "Canon imagePROGRAF iPF750",
+      "Canon imagePROGRAF iPF755",
+    ],
+    descricao:
+      "Cartucho de tinta Canon PFI-102 Ciano pigmentado. Alta fidelidade de cor e resistência à umidade e desbotamento.",
+  },
+  {
+    id: 512,
+    nome: "CARTUCHO CANON PFI-102 MAGENTA",
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi102_130ml_3587384_6_20190918102643.jpg",
+    compatibilidade: [
+      "Canon imagePROGRAF iPF500",
+      "Canon imagePROGRAF iPF510",
+      "Canon imagePROGRAF iPF600",
+      "Canon imagePROGRAF iPF605",
+      "Canon imagePROGRAF iPF610",
+      "Canon imagePROGRAF iPF650",
+      "Canon imagePROGRAF iPF655",
+      "Canon imagePROGRAF iPF700",
+      "Canon imagePROGRAF iPF710",
+      "Canon imagePROGRAF iPF720",
+      "Canon imagePROGRAF iPF750",
+      "Canon imagePROGRAF iPF755",
+    ],
+    descricao:
+      "Cartucho de tinta Canon PFI-102 Magenta pigmentado. Ideal para aplicações gráficas com riqueza de tons e nitidez.",
+  },
+  {
+    id: 513,
+    nome: "CARTUCHO CANON PFI-102 AMARELO",
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/447858/cartucho_de_tinta_canon_pfi102_130ml_3587384_3_20190918102643.jpg",
+    compatibilidade: [
+      "Canon imagePROGRAF iPF500",
+      "Canon imagePROGRAF iPF510",
+      "Canon imagePROGRAF iPF600",
+      "Canon imagePROGRAF iPF605",
+      "Canon imagePROGRAF iPF610",
+      "Canon imagePROGRAF iPF650",
+      "Canon imagePROGRAF iPF655",
+      "Canon imagePROGRAF iPF700",
+      "Canon imagePROGRAF iPF710",
+      "Canon imagePROGRAF iPF720",
+      "Canon imagePROGRAF iPF750",
+      "Canon imagePROGRAF iPF755",
+    ],
   },
   {
     id: 29,

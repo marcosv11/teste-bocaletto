@@ -3,11 +3,41 @@
 
 <!-- CONTAINER GERAL -->
 <div class="container mb-4 mt-5">
-  <!-- LINHA DA BUSCA E TEXTO -->
-  <div class="row align-items-center">
-    <!-- BARRA DE BUSCA -->
-    <div class="col-md-6">
-      <div class="input-group">
+  <div class="row">
+    <!-- MENU LATERAL -->
+    <div class="col-md-3">
+      <div class="list-group">
+        <button
+          type="button"
+          class="list-group-item list-group-item-action custom-button"
+          [class.active]="categoriaSelecionada === 'toners'"
+          (click)="categoriaSelecionada = 'toners'"
+        >
+          Toners
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action custom-button"
+          [class.active]="categoriaSelecionada === 'cartuchos'"
+          (click)="categoriaSelecionada = 'cartuchos'"
+        >
+          Cartuchos
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action custom-button"
+          [class.active]="categoriaSelecionada === 'cilindros'"
+          (click)="categoriaSelecionada = 'cilindros'"
+        >
+          Cilindros
+        </button>
+      </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="col-md-9">
+      <!-- BARRA DE BUSCA -->
+      <div class="input-group mb-4">
         <input
           type="text"
           class="form-control"
@@ -18,37 +48,35 @@
           <i class="bi bi-search"></i>
         </span>
       </div>
-    </div>
-  </div>
 
-  <!-- LISTA DE PRODUTOS OU MENSAGEM -->
-  <div class="container my-5">
-    <div class="row">
-      <ng-container *ngIf="produtosFiltrados.length > 0; else nenhumProduto">
-        <div class="col-md-3 mb-4" *ngFor="let produto of produtosFiltrados">
-          <app-card-compra [produto]="produto"></app-card-compra>
-        </div>
-      </ng-container>
+      <!-- LISTA DE PRODUTOS -->
+      <div class="row">
+        <ng-container *ngIf="produtosFiltrados.length > 0; else nenhumProduto">
+          <div class="col-md-4 mb-4" *ngFor="let produto of produtosFiltrados">
+            <app-card-compra [produto]="produto"></app-card-compra>
+          </div>
+        </ng-container>
 
-      <!-- MENSAGEM CASO NENHUM PRODUTO SEJA ENCONTRADO -->
-      <ng-template #nenhumProduto>
-        <div class="col-md-6 mt-4" *ngIf="filtro.trim()">
-          <p class="mb-2">
-            Não encontrou o produto que procura?
-            <strong>
-              <a
-                [href]="
-                  'https://wa.me/5511989861526?text=' +
-                  'Olá, queria consultar um produto'
-                "
-                target="_blank"
-              >
-                Fale com a gente no WhatsApp!
-              </a>
-            </strong>
-          </p>
-        </div>
-      </ng-template>
+        <!-- MENSAGEM CASO NENHUM PRODUTO -->
+        <ng-template #nenhumProduto>
+          <div class="col-md-12 mt-4" *ngIf="filtro.trim()">
+            <p class="mb-2">
+              Não encontrou o produto que procura?
+              <strong>
+                <a
+                  [href]="
+                    'https://wa.me/5511989861526?text=' +
+                    'Olá, queria consultar um produto'
+                  "
+                  target="_blank"
+                >
+                  Fale com a gente no WhatsApp!
+                </a>
+              </strong>
+            </p>
+          </div>
+        </ng-template>
+      </div>
     </div>
   </div>
 </div>

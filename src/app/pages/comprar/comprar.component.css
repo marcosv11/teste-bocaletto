@@ -12,3 +12,22 @@
   background: #059bcd;
   box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
 }
+´ .list-group-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #e4f5fb;
+  color: #059bcd;
+}
+
+.list-group-item.active {
+  background: #059bcd !important;
+  color: white !important;
+}
