@@ -38,7 +38,7 @@ export class HomeComponent {
       pergunta:
         "Quem fica responsável pela manutenção dos equipamentos e troca de suprimentos?",
       resposta:
-        "Toda a manutenção preventiva, corretiva e a troca de toners/cartuchos é de nossa responsabilidade.",
+        "Toda a manutenção preventiva, corretiva e a troca de toners/cartuchos é realizada por um técnico especializado.",
     },
   ];
 

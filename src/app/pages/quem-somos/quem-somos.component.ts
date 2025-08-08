@@ -13,7 +13,12 @@ export class QuemSomosComponent implements OnInit {
     this.selectedIndex = 0;
   }
 
-  menuItems = [{ title: "Dados cadastrais" }, { title: "Diferenciais" }];
+  menuItems = [
+    { title: "Dados cadastrais" },
+    { title: "Diferenciais" },
+    { title: "Sobre nós" },
+    { title: "Missão, Visão, Valores" },
+  ];
 
   selectedIndex: number | null = null;
 

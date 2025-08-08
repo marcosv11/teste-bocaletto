@@ -11,7 +11,7 @@ import { FormsModule } from "@angular/forms";
   styleUrl: "./comprar.component.css",
 })
 export class ComprarComponent implements OnInit {
-  categoriaSelecionada: "toners" | "cartuchos" | "cilindros" = "toners";
+  categoriaSelecionada: "toners" | "cartuchos" | "fotocondutores" = "toners";
   filtro: string = "";
 
   ngOnInit(): void {
@@ -1092,15 +1092,6 @@ export class ComprarComponent implements OnInit {
 
   listaDeCartuchos = [
     {
-      id: 3,
-      nome: "CARTUCHO DE CILINDRO HP CE314A",
-      imagem:
-        "https://www.acessoshop.com.br/image/cache//catalog/product/CE314A-700x700.jpg?mode=contain",
-      compatibilidade: ["HP CP1025", "HP CP1025nw"],
-      descricao:
-        "Cilindro de imagem HP CE314A essencial para o funcionamento eficiente das impressoras HP CP1025.",
-    },
-    {
       id: 26,
       nome: "CARTUCHO CANON PFI-107 PRETO",
       imagem:
@@ -1539,6 +1530,15 @@ export class ComprarComponent implements OnInit {
 
   listaDeCilindros = [
     {
+      id: 3,
+      nome: "CARTUCHO DE CILINDRO HP CE314A",
+      imagem:
+        "https://www.acessoshop.com.br/image/cache//catalog/product/CE314A-700x700.jpg?mode=contain",
+      compatibilidade: ["HP CP1025", "HP CP1025nw"],
+      descricao:
+        "Cilindro de imagem HP CE314A essencial para o funcionamento eficiente das impressoras HP CP1025.",
+    },
+    {
       id: 13,
       nome: "CILINDRO BROTHER DRB021",
       imagem:
@@ -1620,7 +1620,7 @@ export class ComprarComponent implements OnInit {
       case "cartuchos":
         listaSelecionada = this.listaDeCartuchos;
         break;
-      case "cilindros":
+      case "fotocondutores":
         listaSelecionada = this.listaDeCilindros;
         break;
     }
