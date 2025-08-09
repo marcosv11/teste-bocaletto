@@ -1088,6 +1088,292 @@ export class ComprarComponent implements OnInit {
       descricao:
         "Toner Samsung D203U para impressoras ProXpress. Excelente rendimento e confiabilidade para negócios.",
     },
+    {
+      id: 120,
+      nome: "TONER HP CB435/436/285/278A - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/571937/toner_hp_cb435_436_285_2k_evolut_2830_1_20240430182403.jpg",
+      compatibilidade: [
+        "HP LaserJet P1005",
+        "HP LaserJet P1006",
+        "HP LaserJet P1100 / P1102",
+        "HP LaserJet Pro M1132 / M1210 / M1212NF",
+        "HP LaserJet Pro P1560 / P1606",
+        "Canon LBP3010 / LBP3050 / LBP3100",
+      ],
+      descricao:
+        "Toner compatível para substituir os códigos OEM CB435A, CB436A, CE285A e CE278A, com rendimento aproximado de 2.000 páginas — ideal para uso diário em monocromático.",
+    },
+    {
+      id: 121,
+      nome: "TONER HP Q2612A - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/406359/toner_compativel_para_hp_q2612a_2612_12a_evolut_para_1020_1022_1022n_1022nw_3020_3050n_3052_m1005_m1_5931_1_76554b0333c3a93bd525609aba300901.jpg",
+      compatibilidade: [
+        "HP LaserJet 1010 / 1012 / 1015 / 1018",
+        "HP LaserJet 1020 / 1022",
+        "HP LaserJet 3015 / 3020 / 3030",
+        "HP LaserJet 3050 / 3052 / 3055",
+        "HP LaserJet M1005 MFP",
+        "HP LaserJet M1319 MFP",
+      ],
+      descricao:
+        "Toner compatível que substitui o HP 12A (Q2612A), com rendimento estimado em 2.000 páginas, compatível com várias impressoras LaserJet antigas da HP.",
+    },
+    {
+      id: 122,
+      nome: "TONER HP CF283A - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/1094922/toner_cartridge_hp_cf283a_evolut_1217_1_d7bc38b8be4dd823f2a371da3d81dd08.jpg",
+      compatibilidade: [
+        "HP LaserJet Pro MFP M201DW",
+        "HP LaserJet Pro MFP M201N",
+        "HP LaserJet Pro MFP M225DN",
+        "HP LaserJet Pro MFP M225DW",
+        "HP LaserJet Pro MFP M125a / M125nw / M127fn / M127fw",
+      ],
+      descricao:
+        "Toner compatível para o cartucho HP 83A (CF283A), com rendimento padrão de cerca de 1.500 páginas, ideal para a linha Pro MFP da HP.",
+    },
+    {
+      id: 123,
+      nome: "TONER HP W105A/W1105A - COMPATÍVEL",
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_689106-MLA84676262158_052025-O.webp",
+      compatibilidade: [
+        "HP Laser MFP 107a",
+        "HP Laser 107w",
+        "HP Laser MFP 135a",
+        "HP Laser MFP 135w",
+        "HP Laser MFP 137fnw",
+      ],
+      descricao:
+        "Toner compatível para o cartucho HP 105A (W1105A), rendimento aproximado de 1.000 páginas, projetado para impressoras compactas HP de série 100-MFP.",
+    },
+    {
+      id: 124,
+      nome: "TONER HP CF280X/CE505X - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/406359/toner_compativel_para_hp_280x_505x_80x_05x_para_p2055dn_m425dw_m401dw_p2055_m425_m401_p2055n_m425dn__7851_1_650c917f5f23567c1a11b88e7d5784f2.jpg",
+      compatibilidade: [
+        "HP LaserJet Pro 400 M401 series (M401a, M401d, M401dn, M401dw, M401n, M401dne)",
+        "HP LaserJet Pro 400 MFP M425 series (M425dn, M425dw)",
+      ],
+      descricao:
+        "Toner compatível high-yield equivalente ao CF280X (80X), com rendimento de aproximadamente 6.900 páginas, ideal para alto volume em escritórios.",
+    },
+    {
+      id: 125,
+      nome: "TONER HP CF280A/CE505A - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/730006/toner_ce505a_505a_05a_cf280a_280a_80a_p2035_p2050_m401_1339225629_1_8a4e5e3e34815382a5bb478e790bf9d5.jpg",
+      compatibilidade: [
+        "HP LaserJet Pro 400 M401 series (M401a, M401d, M401dn, M401dw, M401n, M401dne)",
+        "HP LaserJet Pro 400 MFP M425 series (M425dn, M425dw)",
+      ],
+      descricao:
+        "Toner compatível padrão para substituição do CF280A (80A), com rendimento de aproximadamente 2.560–2.700 páginas, excelente para uso rotineiro.",
+    },
+    {
+      id: 126,
+      nome: "TONER SAMSUNG D203U - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/406359/toner_compativel_com_samsung_d203_mlt203u_evolut_para_m4070fd_m4020nd_m3870fw_m3820dw_m_4070_4020_38_8075_1_42d475a4b14fa2899e4c8d1b7d15e235.jpg",
+      compatibilidade: [
+        "Samsung ProXpress M4020N",
+        "Samsung ProXpress M4020ND",
+        "Samsung ProXpress M4070",
+        "Samsung ProXpress M4070FR",
+        "Samsung SL-M4020ND",
+        "Samsung SL-M4070FR",
+      ],
+      descricao:
+        "Toner compatível da linha ultra high-yield, equivalente ao código MLT-D203U, com rendimento de cerca de 15 000 páginas — ideal para escritórios com alto volume de impressão.",
+    },
+
+    {
+      id: 127,
+      nome: "TONER SAMSUNG D111S - COMPATÍVEL",
+      imagem:
+        "https://a-static.mlcdn.com.br/800x560/cartuho-toner-compativel-samsung-d111-m2020-m2070-evolut/maxtonercartuchos/ffa1d6e4f32a11ec8f3e4201ac185078/657652f36a2bbb32963355eeb35651bf.jpeg",
+      compatibilidade: [
+        "Samsung Xpress SL-M2020",
+        "Samsung Xpress SL-M2020W",
+        "Samsung Xpress SL-M2022",
+        "Samsung Xpress SL-M2022W",
+        "Samsung Xpress SL-M2024",
+        "Samsung Xpress SL-M2024W",
+        "Samsung Xpress SL-M2070",
+        "Samsung Xpress SL-M2070W",
+        "Samsung Xpress SL-M2070FW",
+        "Samsung M2020",
+        "Samsung M2020W",
+        "Samsung M2022",
+        "Samsung M2022W",
+        "Samsung M2024",
+        "Samsung M2024W",
+      ],
+      descricao:
+        "Toner compatível para MLT-D111S (111S), com rendimento padrão de cerca de 1 000 páginas, ideal para impressoras compactas da linha Xpress e M-series da Samsung.",
+    },
+
+    {
+      id: 128,
+      nome: "TONER SAMSUNG D101S - COMPATÍVEL",
+      imagem:
+        "https://a-static.mlcdn.com.br/1500x1500/toner-evolut-mlt-d101s-d101-15k-2160-2165-3400-3405/livrariasantaterezinha/5aba6854e8bc11eba9a04201ac18500e/a505d4b7ff029cf83142a2d34eee4a86.jpeg",
+      compatibilidade: [
+        "Samsung ML-2160",
+        "Samsung ML-2162",
+        "Samsung ML-2165 / ML-2165W",
+        "Samsung ML-2168 / ML-2168W",
+        "Samsung SCX-3400",
+        "Samsung SCX-3405 / SCX-3405W / SCX-3405FW",
+        "Samsung SF-760 / SF-760P",
+      ],
+      descricao:
+        "Toner compatível para MLT-D101S, rendimento estimado de 1 500 páginas a 5 % de cobertura, compatível com várias impressoras ML e SCX da Samsung.",
+    },
+    {
+      id: 129,
+      nome: "TONER SAMSUNG D104S - COMPATÍVEL",
+      imagem:
+        "https://netcomputadores.com.br/dbimg/produtos/compchd104s_78890_g.jpg",
+      compatibilidade: [
+        "Samsung ML-1660 / ML-1661 / ML-1665 / ML-1666 / ML-1667 / ML-1675",
+        "Samsung ML-1860 / ML-1861 / ML-1864 / ML-1865 / ML-1865W",
+        "Samsung SCX-3200 / SCX-3201 / SCX-3205 / SCX-3205W / SCX-3206 / SCX-3210 / SCX-3217 / SCX-3218",
+      ],
+      descricao:
+        "Toner compatível padrão para MLT-D104S (104S), com rendimento de cerca de 1 500 páginas, compatível com diversas impressoras ML e SCX da Samsung.",
+    },
+    {
+      id: 130,
+      nome: "TONER BROTHER TN3472 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/571937/toner_brother_tn_3472_tn_880_12k_evolut_5228_1_fd280db465a89714b58682caee8338bb_20240430202219.png",
+      compatibilidade: ["Brother HL-L5102DN", "Brother L5102DN series"],
+      descricao:
+        "Toner compatível para o modelo TN3472, ideal para impressoras Brother Pro-series como L5102DN, com rendimento elevado e desempenho profissional.",
+    },
+    {
+      id: 131,
+      nome: "TONER BROTHER TN2370/2340/660 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/1383299/toner_brother_tn2370_660_compativel_61_1_6d1f8cb1ef418af0e0d72bdb694b56a0.jpg",
+      compatibilidade: [
+        "Brother HL-L2300D",
+        "Brother HL-L2305W",
+        "Brother HL-L2320D",
+        "Brother HL-L2340DW",
+        "Brother HL-L2360DW",
+        "Brother DCP-L2520DW",
+        "Brother DCP-L2540DW",
+        "Brother MFC-L2700DW",
+        "Brother MFC-L2720DW",
+        "Brother MFC-L2740DW",
+      ],
+      descricao:
+        "Toner compatível que cobre as séries TN2370/TN2340 e TN660, com rendimento de até 2 600 páginas (alto rendimento).",
+    },
+    {
+      id: 132,
+      nome: "TONER BROTHER TN1060 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/406359/toner_compativel_para_brother_tn1060_tn1000_evolut_para_hl_1212w_dcp_1617nw_hl_1210w_mfc_1810e_dcp16_5939_1_51fca44aa557b92969e9c971d69251dd.jpg",
+      compatibilidade: [
+        "Brother HL-1110 / HL-1110E / HL-1110R",
+        "Brother HL-1112 series",
+        "Brother HL-1210W / HL-1212W",
+        "Brother DCP-1510 / DCP-1510E / DCP-1510R",
+        "Brother DCP-1512 series",
+        "Brother DCP-1610W",
+        "Brother MFC-1810 series",
+        "Brother MFC-1815R",
+        "Brother MFC-1910W",
+      ],
+      descricao:
+        "Toner compatível para TN1060, com rendimento aproximado de 1 000 páginas, ideal para impressoras domésticas compactas da Brother.",
+    },
+    {
+      id: 133,
+      nome: "TONER BROTHER TN620/650 - COMPATÍVEL",
+      imagem:
+        "https://http2.mlstatic.com/D_Q_NP_908289-MLA85745401184_062025-O.webp",
+      compatibilidade: [
+        "Brother HL-5340D",
+        "Brother HL-5370DW / HL-5370DWT",
+        "Brother DCP-8080DN / DCP-8085DN",
+        "Brother MFC-8480DN",
+        "Brother MFC-8680DN",
+        "Brother MFC-8690DW",
+        "Brother MFC-8890DW",
+        "Brother MFC-8880DN",
+      ],
+      descricao:
+        "Toner compatível padrão (TN620) e high yield (TN650) com rendimento de até 8 000 páginas, indicado para ambientes empresariais com demanda elevada.",
+    },
+    {
+      id: 134,
+      nome: "TONER BROTHER TN420/450 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/406359/toner_compativel_para_brother_tn450_420_410_evolut_p_hl2280dw_hl2270dw_hl2250dn_hl2135w_mfc7460dn_mf_8077_1_e5c6559e78e83a1098b0e329ac846cba.jpg",
+      compatibilidade: [
+        "Brother DCP-7060D / DCP-7065DN",
+        "Brother HL-2220 / HL-2230",
+        "Brother HL-2240 / HL-2240D",
+        "Brother HL-2270DW / HL-2275DW / HL-2280DW",
+        "Brother IntelliFAX-2840 / IntelliFAX-2940",
+        "Brother MFC-7240 / MFC-7360N / MFC-7365DN / MFC-7460DN / MFC-7860DW",
+      ],
+      descricao:
+        "Toner compatível padrão (TN420) ou high-yield (TN450), com rendimento médio e indicado para uso em ambientes domésticos e pequenos escritórios.",
+    },
+    {
+      id: 135,
+      nome: "TONER BROTHER TN3382 - COMPATÍVEL",
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_900830-MLB78238112206_082024-O.webp",
+      compatibilidade: [
+        "Brother HL-5440D / HL-5450DN",
+        "Brother HL-5470DW / HL-5470DWT",
+        "Brother HL-6180DW / HL-6180DWT",
+        "Brother DCP-8110DN / DCP-8150DN / DCP-8155DN",
+        "Brother MFC-8510DN / MFC-8520DN",
+        "Brother MFC-8710DW / MFC-8910DW / MFC-8950DW / MFC-8950DWT",
+      ],
+      descricao:
+        "Toner compatível para TN3382 (e variantes TN750/TN3340), com rendimento elevado (cerca de 8 000 páginas) para uso em ambientes de alto volume.",
+    },
+    {
+      id: 136,
+      nome: "TONER BROTHER TN3392 - COMPATÍVEL",
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_814973-MLB85454312883_052025-V.webp",
+      compatibilidade: [
+        "Brother HL-5440D / HL-5450DN",
+        "Brother HL-5470DW",
+        "Brother HL-6180DW",
+        "Brother MFC-8510DN / MFC-8710DW / MFC-8910DW",
+      ],
+      descricao:
+        "Toner compatível para TN3392 (versão de alta capacidade similar ao TN780), com rendimento estimado de ~3 000 páginas e alta durabilidade.",
+    },
+    {
+      id: 137,
+      nome: "TONER BROTHER TNB021 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/448593/toner_evolut_compativel_brother_tnb021_2_6k_26407_1_4a2ca4db767ccb5f6b5b87aaf54f3ee9.jpg",
+      compatibilidade: [
+        "Brother HL-B2100DB",
+        "Brother HL-B2180DWB",
+        "Brother DCP-B7600DB",
+        "Brother DCP-B7640DWB",
+        "Brother MFC-B7810DWB",
+      ],
+      descricao:
+        "Toner compatível de alto rendimento equivalente ao TNB021. Aproximadamente 2 600 páginas conforme ISO/IEC 19752, ideal para uso frequente em escritórios que demandam impressões em volume com qualidade consistente.",
+    },
   ];
 
   listaDeCartuchos = [
@@ -1607,6 +1893,134 @@ export class ComprarComponent implements OnInit {
       ],
       descricao:
         "Unidade de imagem DR3440 para uso em impressoras Brother profissionais. Alto rendimento e precisão.",
+    },
+    {
+      id: 111,
+      nome: "CILINDRO BROTHER DR3440 - COMPATÍVEL",
+      imagem:
+        "https://cdn.awsli.com.br/600x700/1094/1094078/produto/4289915745619b085b.jpg",
+      compatibilidade: [
+        "Brother DCP-L5500DN",
+        "Brother DCP-L5600DN",
+        "Brother DCP-L5650DN",
+        "Brother HL-L5000D",
+        "Brother HL-L5100DN",
+        "Brother HL-L5200DW",
+        "Brother HL-L6200DW",
+        "Brother HL-L6400DW",
+        "Brother MFC-L5700DW",
+        "Brother MFC-L5800DW",
+        "Brother MFC-L6900DW",
+      ],
+      descricao:
+        "Unidade de imagem DR-3440 compatível para ambientes de alto volume, com rendimento e qualidade elevados.",
+    },
+    {
+      id: 112,
+      nome: "CILINDRO BROTHER DR2340 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/1370621/cartucho_de_cilindro_brother_dr2340_dr660_dr2370_para_toner_tn2370_compativel_12k_483_1_4b8bdd7bfbdbeeb55a4405cc4fd8f401.jpg",
+      compatibilidade: [
+        "Brother HL-L2320D",
+        "Brother HL-L2360DW",
+        "Brother DCP-L2520DW",
+        "Brother DCP-L2540DW",
+        "Brother MFC-L2700DW",
+        "Brother MFC-L2720DW",
+        "Brother MFC-L2740DW",
+      ],
+      descricao:
+        "Unidade de cilindro DR-2340 compatível com impressoras de escritório populares, com rendimento padrão.",
+    },
+    {
+      id: 113,
+      nome: "CILINDRO BROTHER DR1060 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/406359/cartucho_de_cilindro_compativel_para_brother_dr1060_evolut_para_dcp_1617nw_hl_1212w_hl_1210w_dcp_161_8037_4_bee32070f32387e40b6b12888be1eb1c.jpg",
+      compatibilidade: [
+        "Brother HL-1112",
+        "Brother HL-1202",
+        "Brother HL-1212W",
+        "Brother DCP-1510",
+        "Brother DCP-1512",
+        "Brother DCP-1602",
+        "Brother DCP-1610W",
+        "Brother DCP-1617NW",
+      ],
+      descricao:
+        "Unidade de cilindro DR-1060 compatível, com rendimento aproximado de 10 000 páginas e boa durabilidade.",
+    },
+    {
+      id: 114,
+      nome: "CILINDRO BROTHER DR720 - COMPATÍVEL",
+      imagem:
+        "https://tecmasternet.com/wp-content/uploads/2023/02/Cilindro-Fotocondutor-Brother-DR750-DR720-Evolut-13.jpg",
+      compatibilidade: [
+        "Brother DCP-8110DN",
+        "Brother DCP-8150DN",
+        "Brother DCP-8155DN",
+        "Brother HL-5440D",
+        "Brother HL-5450DN",
+        "Brother HL-5470DW",
+        "Brother HL-6180DW",
+        "Brother MFC-8510DN",
+        "Brother MFC-8710DW",
+        "Brother MFC-8910DW",
+        "Brother MFC-8950DW",
+      ],
+      descricao:
+        "Unidade de cilindro DR-720 original, ideal para impressões de alto volume com rendimento estimado em cerca de 30 000 páginas.",
+    },
+    {
+      id: 115,
+      nome: "CILINDRO BROTHER DRB021 - COMPATÍVEL",
+      imagem:
+        "https://tecmasternet.com/wp-content/uploads/2023/02/Cilindro-Fotocondutor-Brother-DRB021-Evolut-17.jpg",
+      compatibilidade: [
+        "Brother HL-B2000D",
+        "Brother HL-B2080DW",
+        "Brother DCP-B7500D",
+        "Brother DCP-B7535DW",
+        "Brother MFC-B7715DW",
+      ],
+      descricao:
+        "Unidade de imagem DR-B021 compatível com série B, rendimento de aproximadamente 12 000 páginas.",
+    },
+    {
+      id: 116,
+      nome: "CILINDRO BROTHER DR420 - COMPATÍVEL",
+      imagem:
+        "https://www.toptonernet.com.br/storage/empresas/08863077000105/produtos/49VPapkmfpAaaYL8Ny0ow4udutmsPLXmZnqCQPbQ_principal.jpeg",
+      compatibilidade: [
+        "Brother DCP-7060D",
+        "Brother DCP-7065DN",
+        "Brother HL-2130",
+        "Brother HL-2240",
+        "Brother HL-2270DW",
+        "Brother MFC-7365DN",
+        "Brother MFC-7860DW",
+        "Brother IntelliFAX-2840",
+        "Brother IntelliFAX-2940",
+      ],
+      descricao:
+        "Unidade de cilindro DR-420 compatível, rendimento de cerca de 12 000 páginas, ideal para uso doméstico e escritórios.",
+    },
+    {
+      id: 117,
+      nome: "CILINDRO BROTHER DR620 - COMPATÍVEL",
+      imagem:
+        "https://images.tcdn.com.br/img/img_prod/1146605/90_fotocondutor_dr520_dr620_dr_520_620_evolut_compativel_com_brother_8085_8080_1533_1_627171dd4773261bfea74f462a92ea8f.jpg",
+      compatibilidade: [
+        "Brother DCP-8080DN",
+        "Brother DCP-8085DN",
+        "Brother HL-5340D",
+        "Brother HL-5370DW",
+        "Brother MFC-8480DN",
+        "Brother MFC-8890DW",
+        "Brother MFC-8680DN",
+      ],
+      descricao:
+        "Unidade de imagem DR-620 compatível, rendimento de até 25 000 páginas, excelente para ambientes empresariais.",
     },
   ];
 
