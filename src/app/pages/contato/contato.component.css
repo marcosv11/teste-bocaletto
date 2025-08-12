@@ -1,42 +1,86 @@
+/* Gradiente do fundo atrás da imagem */
 .bg-ciano {
   background: linear-gradient(135deg, #00bfff, #059bcd);
 }
 
+/* Wrapper da imagem com proporção estável */
+.img-wrapper {
+  width: min(400px, 100%);
+  aspect-ratio: 4 / 3;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* pode trocar pra 'contain' se preferir ver 100% da foto */
+  z-index: 2;
+}
+.img-bg {
+  top: 16px;
+  left: 16px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Título fluido */
+.lead-title {
+  font-size: clamp(1.25rem, 1.2vw + 1rem, 2rem);
+}
+
+/* Texto um pouco mais compacto no mobile */
+.small-up p {
+  line-height: 1.45;
+}
+
+/* ===== Botão: escolha UMA versão. Mantive a versão sólida azul. ===== */
+.btn-home {
+  color: #fff;
+  background: #059bcd;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-home:hover {
+  background: #047ba1;
+  transform: scale(1.03);
+}
+
+/* Se quiser a versão em gradiente, troque o bloco acima por este:
 .btn-home {
   background: linear-gradient(135deg, #00bfff, #ff00ff);
-  color: white;
-  border: none;
-  border-radius: 0.75rem;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
+  color: #fff; border: none; border-radius: 12px;
+  padding: 12px 16px; font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  transition: transform .2s ease, filter .2s ease;
 }
+.btn-home:hover { transform: scale(1.04); filter: brightness(1.02); }
+*/
 
-.btn-home:hover {
-  transform: scale(1.05);
-  color: white;
-}
-
+/* Linha decorativa, se for usar junto do título */
 .line-glow {
   height: 4px;
-  width: 60px;
+  width: clamp(60px, 12vw, 100px);
   background: linear-gradient(90deg, #00bfff, #ff00ff);
   border-radius: 4px;
   box-shadow: 0 0 8px #00bfff;
 }
 
-.btn-home {
-  color: white;
-  background: #059bcd;
-  padding: 13px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
+/* Breakpoints */
+@media (max-width: 768px) {
+  .btn-home {
+    width: 100%;
+  } /* botão full-width no mobile */
+  .img-bg {
+    top: 12px;
+    left: 12px;
+  }
 }
-
-.btn-home:hover {
-  transform: scale(1.05);
-  color: white;
+@media (max-width: 360px) {
+  .img-bg {
+    top: 10px;
+    left: 10px;
+  }
 }

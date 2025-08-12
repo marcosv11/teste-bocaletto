@@ -10,6 +10,7 @@ import { ContatoComponent } from "./pages/contato/contato.component";
 import { ServicosComponent } from "./pages/servicos/servicos.component";
 import { ComprarDetalhesComponent } from "./pages/comprar-detalhes/comprar-detalhes.component";
 import { ManutencaoComponent } from "./pages/manutencao/manutencao.component";
+import { LoginComponent } from "./pages/login/login/login.component";
 
 export const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" }, // acesso raiz
@@ -22,6 +23,7 @@ export const routes: Routes = [
   { path: "contato", component: ContatoComponent },
   { path: "servicos", component: ServicosComponent },
   { path: "comprar-detalhes/:id", component: ComprarDetalhesComponent },
+  { path: "login", component: LoginComponent },
 
   { path: "**", redirectTo: "/home" }, // qualquer rota errada
 ];

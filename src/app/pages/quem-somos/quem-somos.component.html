@@ -1,137 +1,131 @@
 <h3 class="title">QUEM SOMOS</h3>
 <div class="line-glow"></div>
 
-<div class="d-flex menu">
-  <div class="border-end menu" style="width: 30%">
-    <ul class="nav flex-column">
-      <li class="nav-item" *ngFor="let item of menuItems; let i = index">
-        <a
-          class="nav-link"
-          [ngClass]="{ active: selectedIndex === i }"
-          href="#"
-          (click)="selectItem(i, $event)"
+<div class="container">
+  <div class="row g-4 mt-3">
+    <!-- Menu -->
+    <div class="col-12 col-lg-4">
+      <nav class="quem-menu border-end-lg pe-lg-3">
+        <ul
+          class="nav flex-row flex-lg-column flex-nowrap overflow-auto gap-2 gap-lg-0"
         >
-          {{ item.title }}
-        </a>
-      </li>
-    </ul>
-  </div>
+          <li class="nav-item" *ngFor="let item of menuItems; let i = index">
+            <a
+              class="nav-link"
+              [ngClass]="{ active: selectedIndex === i }"
+              href="#"
+              (click)="selectItem(i, $event)"
+              [attr.aria-current]="selectedIndex === i ? 'page' : null"
+            >
+              {{ item.title }}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <div class="p-4" style="width: 70%">
-    <ng-container [ngSwitch]="selectedIndex">
-      <div *ngSwitchCase="2">
-        <h4>Sobre nós</h4>
-        <p>
-          A Bocaletto Suprimentos foi fundada em abril de 2002 com o propósito
-          de oferecer soluções completas, ágeis e de qualidade em suprimentos
-          para impressoras. Com mais de duas décadas de atuação no mercado, nos
-          destacamos pelo comprometimento com nossos clientes e pela
-          confiabilidade de nossos produtos e serviços.
-        </p>
+    <!-- Conteúdo -->
+    <div class="col-12 col-lg-8">
+      <div class="p-3 p-md-4 bg-white rounded-3 shadow-sm">
+        <ng-container [ngSwitch]="selectedIndex">
+          <div *ngSwitchCase="2">
+            <h4>Sobre nós</h4>
+            <p>
+              A Bocaletto Suprimentos foi fundada em abril de 2002 com o
+              propósito de oferecer soluções completas, ágeis e de qualidade em
+              suprimentos para impressoras. Com mais de duas décadas de atuação
+              no mercado, nos destacamos pelo comprometimento com nossos
+              clientes e pela confiabilidade de nossos produtos e serviços.
+            </p>
+            <p>
+              Oferecemos uma linha completa de suprimentos, como toners,
+              cartuchos originais e compatíveis, tintas, peças e acessórios para
+              impressoras das principais marcas. Atendemos empresas,
+              escritórios, órgãos públicos e usuários finais, sempre buscando o
+              melhor custo-benefício e a máxima eficiência.
+            </p>
+            <p>
+              Nosso atendimento é personalizado e focado em criar parcerias de
+              longo prazo. Contamos com uma equipe especializada, pronta para
+              oferecer suporte técnico e as melhores soluções para manter seu
+              ambiente de impressão sempre funcional.
+            </p>
+          </div>
 
-        <p>
-          Oferecemos uma linha completa de suprimentos, como toners, cartuchos
-          originais e compatíveis, tintas, peças e acessórios para impressoras
-          das principais marcas. Atendemos empresas, escritórios, órgãos
-          públicos e usuários finais, sempre buscando o melhor custo-benefício e
-          a máxima eficiência.
-        </p>
+          <div *ngSwitchCase="3">
+            <h4>Missão, Visão e Valores</h4>
+            <strong>Missão</strong>
+            <p>
+              Oferecer soluções em suprimentos para impressão com qualidade,
+              agilidade e confiança, promovendo economia e eficiência para
+              nossos clientes.
+            </p>
 
-        <p>
-          Nosso atendimento é personalizado e focado em criar parcerias de longo
-          prazo. Contamos com uma equipe especializada, pronta para oferecer
-          suporte técnico e as melhores soluções para manter seu ambiente de
-          impressão sempre funcional.
-        </p>
+            <strong>Visão</strong>
+            <p>
+              Ser referência regional em fornecimento de suprimentos para
+              impressão, reconhecida pela excelência no atendimento e pela
+              solidez nas relações comerciais.
+            </p>
+
+            <strong>Valores</strong>
+            <p>
+              • Compromisso com a qualidade <br />• Ética e transparência <br />
+              • Agilidade e eficiência <br />
+              • Atendimento humanizado e personalizado <br />
+              • Respeito ao cliente e ao meio ambiente
+            </p>
+          </div>
+
+          <div *ngSwitchCase="1">
+            <h4>Diferenciais</h4>
+            <p>
+              <strong>Atendimento rápido e eficiente</strong>, com retorno ágil
+              para garantir a satisfação de cada cliente.
+            </p>
+            <p>
+              <strong>Equipe comercial experiente</strong>, preparada para
+              entender e indicar soluções alinhadas às necessidades específicas
+              de cada negócio.
+            </p>
+            <p>
+              <strong>Suporte técnico qualificado</strong>, com profissionais
+              treinados para orientar na instalação e no uso dos equipamentos.
+            </p>
+            <p>
+              <strong>Estoque completo e variado</strong>, com pronta entrega
+              para diferentes tipos de demandas.
+            </p>
+            <p>
+              <strong>Atendimento remoto opcional</strong>, para auxiliar na
+              instalação de equipamentos e esclarecer dúvidas gerais.
+            </p>
+          </div>
+
+          <div *ngSwitchCase="0">
+            <h4>Política Comercial</h4>
+            <p>
+              <strong>Razão Social:</strong> Bocaletto Com. Máquinas e Suprim.
+              Inf. Ltda.
+            </p>
+            <p><strong>Nome Fantasia:</strong> Bocaletto</p>
+            <p><strong>Endereço:</strong> Rua Bôrtolo Basso, Nº 95 – Sala 02</p>
+            <p><strong>Bairro:</strong> Centro</p>
+            <p><strong>Cidade:</strong> São Bernardo do Campo</p>
+            <p><strong>Estado:</strong> SP</p>
+            <p><strong>País:</strong> Brasil</p>
+            <p><strong>CEP:</strong> 09720-590</p>
+            <p><strong>Telefone:</strong> (11) 2897-4256</p>
+            <p><strong>Celular:</strong> (11) 98986-1526</p>
+            <p><strong>CNPJ:</strong> 05.006.852/0001-00</p>
+            <p><strong>Inscrição Estadual:</strong> 635.504.599.110</p>
+          </div>
+
+          <div *ngSwitchDefault>
+            <p>Selecione um item do menu para ver o conteúdo.</p>
+          </div>
+        </ng-container>
       </div>
-
-      <div *ngSwitchCase="3">
-        <h4>Missão, Visão e Valores</h4>
-        <strong>Missão</strong>
-        <p>
-          Oferecer soluções em suprimentos para impressão com qualidade,
-          agilidade e confiança, promovendo economia e eficiência para nossos
-          clientes.
-        </p>
-
-        <strong>Visão</strong>
-        <p>
-          Ser referência regional em fornecimento de suprimentos para impressão,
-          reconhecida pela excelência no atendimento e pela solidez nas relações
-          comerciais.
-        </p>
-
-        <strong>Valores</strong>
-        <p>
-          • Compromisso com a qualidade <br />• Ética e transparência <br />
-          • Agilidade e eficiência <br />
-          • Atendimento humanizado e personalizado <br />
-          • Respeito ao cliente e ao meio ambiente
-        </p>
-      </div>
-
-      <div *ngSwitchCase="1">
-        <h4>Diferenciais</h4>
-        <p>
-          <strong>Atendimento rápido e eficiente</strong>, com retorno ágil para
-          garantir a satisfação de cada cliente.
-        </p>
-
-        <p>
-          <strong>Equipe comercial experiente</strong>, preparada para entender
-          e indicar soluções alinhadas às necessidades específicas de cada
-          negócio.
-        </p>
-
-        <p>
-          <strong>Suporte técnico qualificado</strong>, com profissionais
-          treinados para orientar na instalação e no uso dos equipamentos.
-        </p>
-
-        <p>
-          <strong>Estoque completo e variado</strong>, com pronta entrega para
-          diferentes tipos de demandas.
-        </p>
-
-        <p>
-          <strong>Atendimento remoto opcional</strong>, para auxiliar na
-          instalação de equipamentos e esclarecer dúvidas gerais.
-        </p>
-      </div>
-
-      <div *ngSwitchCase="0">
-        <h4>Política Comercial</h4>
-
-        <p>
-          <strong>Razão Social:</strong> Bocaletto Com. Máquinas e Suprim. Inf.
-          Ltda.
-        </p>
-
-        <p><strong>Nome Fantasia:</strong> Bocaletto</p>
-
-        <p><strong>Endereço:</strong> Rua Bôrtolo Basso, Nº 95 – Sala 02</p>
-
-        <p><strong>Bairro:</strong> Centro</p>
-
-        <p><strong>Cidade:</strong> São Bernardo do Campo</p>
-
-        <p><strong>Estado:</strong> SP</p>
-
-        <p><strong>País:</strong> Brasil</p>
-
-        <p><strong>CEP:</strong> 09720-590</p>
-
-        <p><strong>Telefone:</strong> (11) 2897-4256</p>
-
-        <p><strong>Celular:</strong> (11) 98986-1526</p>
-
-        <p><strong>CNPJ:</strong> 05.006.852/0001-00</p>
-
-        <p><strong>Inscrição Estadual:</strong> 635.504.599.110</p>
-      </div>
-      <div *ngSwitchDefault>
-        <p>Selecione um item do menu para ver o conteúdo.</p>
-      </div>
-    </ng-container>
+    </div>
   </div>
 </div>

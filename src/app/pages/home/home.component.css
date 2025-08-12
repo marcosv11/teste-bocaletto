@@ -1,57 +1,90 @@
+/* Base */
 body {
-  background: white;
+  background: #fff;
 }
 
 .btn-home {
-  color: white;
+  color: #fff;
   background: #059bcd;
-  padding: 13px;
+  padding: 12px 16px;
   border: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 700;
   transition: background 0.3s ease, transform 0.2s ease;
 }
-
 .btn-home:hover {
   background: #047ba1;
   transform: scale(1.03);
   cursor: pointer;
 }
 
+/* Títulos com escala fluida */
 h1 {
-  font-weight: bold;
-  font-size: 55px;
+  font-weight: 800;
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 3.4rem);
 }
-
-h2 {
-  font-weight: bold;
-}
-
+h2,
 h3 {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .title-slider {
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: clamp(1.25rem, 1.2vw + 1rem, 1.8rem);
   font-weight: 700;
   margin-bottom: 30px;
 }
 
+/* Carousel */
+.home {
+  min-height: 420px;
+}
+.carousel-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto; /* remove altura fixa */
+  max-height: 56vh; /* limita em telas baixas */
+  object-fit: contain; /* evita corte de imagem */
+}
+
+/* Botões de navegação do carousel */
+.custom-carousel-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(17, 17, 17, 0.35);
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 10;
+}
+.carousel-control-prev {
+  left: -60px;
+}
+.carousel-control-next {
+  right: -60px;
+}
+.custom-arrow {
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+  display: block;
+  text-align: center;
+}
+
+/* Slider de logos */
 .container-logo-slider {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0;
 }
 .logo-slider {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background-color: #fff;
-  padding: 20px 0;
-  margin-top: 40px;
+  background: #fff;
+  padding: 16px 0;
+  margin-top: 24px;
 }
-
 .logo-slider::before,
 .logo-slider::after {
   content: "";
@@ -62,23 +95,13 @@ h3 {
   pointer-events: none;
   z-index: 10;
 }
-
 .logo-slider::before {
   left: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0));
 }
-
 .logo-slider::after {
   right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(to left, #fff 40%, rgba(255, 255, 255, 0));
 }
 
 .logo-track {
@@ -88,23 +111,15 @@ h3 {
   animation: scroll 30s linear infinite;
   align-items: center;
 }
-
 .logo-track img {
-  height: 80px;
+  height: 70px;
   max-width: 150px;
   object-fit: contain;
   object-position: center;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: opacity 0.3s;
   background-color: transparent;
 }
-.carousel-img {
-  width: 100%;
-  max-width: 500px;
-  height: 500px;
-  object-fit: cover;
-}
-
 .logo-track img:hover {
   opacity: 1;
 }
@@ -118,47 +133,17 @@ h3 {
   }
 }
 
-.custom-carousel-btn {
-  width: 2rem;
-  height: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(17, 17, 17, 0.337); /* Cor do fundo do botão */
-  border-radius: 50%;
-  opacity: 1;
-  z-index: 10;
-}
-
-.carousel-control-prev {
-  left: -60px; /* Joga o botão para fora da imagem */
-}
-
-.carousel-control-next {
-  right: -60px; /* Joga o botão para fora da imagem */
-}
-
-/* Deixa o ícone branco dentro do botão preto */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
-.text-pink {
-  color: deeppink;
-}
+/* Accordion / FAQ */
 .card {
   border-radius: 12px;
   border: 1px solid #e4e4e4 !important;
 }
-
 .text-pink {
   color: #059bcd;
 }
 .icon {
   margin-bottom: 5px;
 }
-
-/* Ícone com transição ao trocar */
 .icon.transition {
   transition: all 0.3s ease;
   display: inline-block;
@@ -167,25 +152,99 @@ h3 {
   transform: rotate(180deg) scale(1.1);
 }
 
-/* Container animado */
 .collapse-container {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.4s ease;
   opacity: 0;
 }
-
 .collapse-container.open {
-  max-height: 500px; /* suficiente pro conteúdo, ajuste se necessário */
+  max-height: 500px;
   opacity: 1;
 }
 
 .duvida-container {
-  background: linear-gradient(
-    to right,
-    #047ba1,
-    #059bcd
-  ); /* ajuste da cor final conforme print */
+  background: linear-gradient(to right, #047ba1, #059bcd);
   border-radius: 16px;
-  color: white;
+  color: #fff;
+}
+
+/* ===== Breakpoints ===== */
+
+/* ≤ 992px (md) */
+@media (max-width: 992px) {
+  .home {
+    min-height: initial;
+  }
+  .carousel-img {
+    max-height: 50vh;
+  }
+  .logo-track {
+    gap: 40px;
+  }
+  .title-slider {
+    margin-top: 70px;
+  }
+}
+
+/* ≤ 768px (sm) */
+@media (max-width: 768px) {
+  .custom-carousel-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .carousel-control-prev {
+    left: 10px;
+  } /* traz setas pra dentro */
+  .carousel-control-next {
+    right: 10px;
+  }
+  .custom-arrow {
+    font-size: 1rem;
+    line-height: 2.25rem;
+  }
+
+  .home {
+    text-align: center;
+  }
+  .btn-home {
+    width: 100%;
+  } /* botões full-width no mobile */
+  .logo-track img {
+    height: 56px;
+  }
+}
+
+/* ≤ 576px (xs) */
+@media (max-width: 576px) {
+  .title-slider {
+    margin-top: 48px;
+    margin-bottom: 20px;
+  }
+  .logo-track {
+    gap: 28px;
+    animation-duration: 26s;
+  } /* ligeiro boost pra não “pular” */
+  .logo-track img {
+    height: 48px;
+    max-width: 120px;
+  }
+}
+
+/* ≤ 360px (mini) */
+@media (max-width: 360px) {
+  h1 {
+    font-size: clamp(1.5rem, 6vw + 0.5rem, 1.8rem);
+  }
+  .logo-track img {
+    height: 42px;
+    max-width: 100px;
+  }
+  .custom-carousel-btn {
+    width: 2rem;
+    height: 2rem;
+  }
+  .custom-arrow {
+    line-height: 2rem;
+  }
 }

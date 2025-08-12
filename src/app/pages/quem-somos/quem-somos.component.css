@@ -1,48 +1,83 @@
+/* Título e linha decorativa */
 .title {
-  margin-top: 50px;
+  margin-top: clamp(28px, 4vw, 50px);
   margin-left: 16px;
-  /* text-align: center; */
   font-weight: 700;
+  font-size: clamp(1.25rem, 2.3vw + 0.6rem, 2rem);
 }
-
 .line-glow {
   margin-left: 16px;
-  width: 193px;
+  width: clamp(120px, 24vw, 193px);
   height: 4px;
   border-radius: 10px;
   background: #059bcd;
   box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
 }
 
+/* Conteúdo */
 h4 {
   font-weight: 700;
 }
 
-.nav-link {
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+/* ===== MENU ===== */
+.quem-menu .nav {
+  /* no mobile: abas horizontais com rolagem */
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.25rem;
 }
+.quem-menu .nav-item {
+  flex: 0 0 auto;
+} /* mantém cada aba do tamanho do conteúdo no mobile */
 
-.nav-link:hover {
+.quem-menu .nav-link {
+  color: #000;
+  font-weight: 500;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap; /* evita quebrar as abas no mobile */
+  font-size: clamp(0.95rem, 0.4vw + 0.85rem, 1.05rem);
+}
+.quem-menu .nav-link:hover {
   background-color: #e9ecef;
 }
-
-.menu {
-  margin-top: 20px;
-  color: black;
-  margin-bottom: 30px;
-}
-
-.nav-link {
-  color: black;
-  font-weight: 500;
-}
-
-.active {
+.quem-menu .nav-link.active {
   color: #059bcd;
   font-weight: 700;
+  background-color: #e4f5fb;
 }
 
-a {
-  font-size: 18px;
+/* Borda direita só no desktop */
+.border-end-lg {
+  border-right: none;
+}
+@media (min-width: 992px) {
+  .border-end-lg {
+    border-right: 1px solid #e5e5e5;
+  }
+  .quem-menu .nav {
+    /* no desktop vira coluna sem overflow */
+    overflow: visible;
+  }
+  .quem-menu .nav-item {
+    flex: initial;
+  }
+  .quem-menu .nav-link {
+    white-space: normal;
+  }
+}
+
+/* Container geral da seção */
+.menu {
+  /* preserva sua classe para compatibilidade, mas sem travar layout */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* Acessibilidade de foco */
+.quem-menu .nav-link:focus-visible {
+  outline: 3px solid rgba(5, 155, 205, 0.35);
+  outline-offset: 2px;
 }

@@ -1,48 +1,67 @@
+/* ===== Título + linha glow ===== */
 .title {
-  margin-top: 50px;
+  margin-top: clamp(28px, 4vw, 50px);
   margin-left: 16px;
   font-weight: 700;
+  font-size: clamp(1.25rem, 2.3vw + 0.6rem, 2rem);
 }
 
 .line-glow {
   margin-left: 16px;
-  width: 142px;
+  width: clamp(96px, 18vw, 142px);
   height: 4px;
   border-radius: 10px;
   background: #059bcd;
   box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
 }
-´ .list-group-item {
+
+/* ===== Lista (Bootstrap list-group) ===== */
+.list-group-item {
   border: none;
   border-radius: 8px;
   margin-bottom: 10px;
   font-weight: 600;
   color: #333;
   background-color: #f8f9fa;
-  transition: all 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease,
+    transform 0.15s ease;
+  padding: 0.9rem 1rem; /* toque confortável no mobile */
 }
 
 .list-group-item:hover {
   background-color: #e4f5fb;
   color: #059bcd;
+  transform: translateY(-1px);
 }
 
-.list-group-item.active {
+/* foco de teclado acessível */
+.list-group-item:focus-visible {
+  outline: 3px solid rgba(5, 155, 205, 0.35);
+  outline-offset: 2px;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover {
   background: #059bcd !important;
-  color: white !important;
+  color: #fff !important;
 }
 
+/* ===== Bloco de dúvidas (callout) ===== */
 .duvida-container {
   background: linear-gradient(to right, #047ba1, #059bcd);
   border-radius: 8px;
   color: #fff;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column; /* padrão mobile */
+  align-items: flex-start;
 }
 
 .duvida-container h4 {
-  font-weight: bold;
-  margin-bottom: 0;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
 }
 
 .duvida-container a {
@@ -55,23 +74,28 @@
   opacity: 0.9;
 }
 
+/* >= md: organiza lado a lado */
 @media (min-width: 768px) {
   .duvida-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+  .duvida-container h4 {
+    margin-bottom: 0;
+  }
 }
 
-@media (max-width: 767px) {
-  .duvida-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* ===== micro-ajustes telas muito pequenas ===== */
+@media (max-width: 360px) {
+  .title {
+    margin-left: 12px;
   }
-
-  .duvida-container h4 {
-    margin-bottom: 1rem;
+  .line-glow {
+    margin-left: 12px;
+    width: clamp(80px, 30vw, 110px);
+  }
+  .list-group-item {
+    padding: 0.85rem 0.9rem;
   }
 }

@@ -1,0 +1,206 @@
+<div style="max-width: 720px; margin: 80px auto 40px; padding: 0 16px">
+  <!-- TELA DE LOGIN -->
+  <div *ngIf="!loggedIn">
+    <h1 class="text-pink" style="text-align: center">Bem-vindo</h1>
+    <h3 style="text-align: center; margin-top: 8px">
+      Acesso exclusivo para funcionários
+    </h3>
+
+    <div class="card" style="padding: 24px; margin-top: 24px">
+      <form
+        [formGroup]="passwordForm"
+        (ngSubmit)="onLogin()"
+        class="grid gap-3"
+      >
+        <label for="password"><strong>Senha</strong></label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          placeholder="Digite a senha"
+          class="input"
+        />
+        <small
+          *ngIf="
+            passwordForm.controls.password.invalid &&
+            passwordForm.controls.password.touched
+          "
+          class="error"
+          >Campo obrigatório.</small
+        >
+
+        <button
+          class="btn-home"
+          type="submit"
+          style="margin-top: 12px; width: 100%"
+        >
+          Entrar
+        </button>
+
+        <p *ngIf="loginError" class="error" style="margin-top: 10px">
+          {{ loginError }}
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FORM DE PRODUTO -->
+  <div *ngIf="loggedIn">
+    <h2 class="text-pink" style="text-align: center">Cadastro de Produto</h2>
+
+    <!-- SUCESSO -->
+    <div
+      *ngIf="sent"
+      class="card"
+      style="
+        padding: 12px;
+        margin-top: 16px;
+        border-color: #c6f6d5;
+        background: #f0fff4;
+        color: #22543d;
+      "
+    >
+      ✅ Produto enviado com sucesso, o cadastro será feito até 00.
+    </div>
+
+    <div class="card" style="padding: 24px; margin-top: 16px">
+      <form
+        [formGroup]="productForm"
+        (ngSubmit)="submitProduct()"
+        class="grid gap-3"
+      >
+        <label for="name"><strong>Nome do produto</strong></label>
+        <input
+          id="name"
+          type="text"
+          formControlName="name"
+          placeholder="Ex.: Toner HP 12A"
+          class="input"
+          [class.invalid]="
+            productForm.controls.name.invalid &&
+            (productForm.controls.name.touched || submitted)
+          "
+        />
+        <small
+          *ngIf="
+            productForm.controls.name.hasError('required') &&
+            (productForm.controls.name.touched || submitted)
+          "
+          class="error"
+          >Campo obrigatório.</small
+        >
+        <small
+          *ngIf="
+            productForm.controls.name.hasError('maxlength') &&
+            (productForm.controls.name.touched || submitted)
+          "
+          class="error"
+          >Máximo de 80 caracteres.</small
+        >
+
+        <label for="category"><strong>Categoria do produto</strong></label>
+        <input
+          id="category"
+          type="text"
+          formControlName="category"
+          placeholder="Ex.: Suprimentos / Toner"
+          class="input"
+          [class.invalid]="
+            productForm.controls.category.invalid &&
+            (productForm.controls.category.touched || submitted)
+          "
+        />
+        <small
+          *ngIf="
+            productForm.controls.category.hasError('required') &&
+            (productForm.controls.category.touched || submitted)
+          "
+          class="error"
+          >Campo obrigatório.</small
+        >
+
+        <label for="imageUrl"><strong>URL da imagem</strong></label>
+        <input
+          id="imageUrl"
+          type="url"
+          formControlName="imageUrl"
+          placeholder="https://exemplo.com/imagem.jpg"
+          class="input"
+          [class.invalid]="
+            productForm.controls.imageUrl.invalid &&
+            (productForm.controls.imageUrl.touched || submitted)
+          "
+        />
+        <small
+          *ngIf="
+            productForm.controls.imageUrl.hasError('required') &&
+            (productForm.controls.imageUrl.touched || submitted)
+          "
+          class="error"
+          >Campo obrigatório.</small
+        >
+        <small
+          *ngIf="
+            productForm.controls.imageUrl.hasError('pattern') &&
+            (productForm.controls.imageUrl.touched || submitted)
+          "
+          class="error"
+          >Informe uma URL válida iniciando com http(s)://</small
+        >
+
+        <div
+          *ngIf="productForm.controls.imageUrl.valid"
+          style="
+            margin: 8px 0 16px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+          "
+        >
+          <img
+            [src]="productForm.value.imageUrl!"
+            alt="Prévia"
+            style="
+              width: 120px;
+              height: 120px;
+              object-fit: cover;
+              border-radius: 8px;
+              border: 1px solid #e4e4e4;
+            "
+          />
+          <small style="opacity: 0.8">Prévia da imagem</small>
+        </div>
+
+        <label for="description"><strong>Descrição do produto</strong></label>
+        <textarea
+          id="description"
+          rows="4"
+          formControlName="description"
+          placeholder="Detalhes, compatibilidades, etc."
+          class="input"
+          [class.invalid]="
+            productForm.controls.description.invalid &&
+            (productForm.controls.description.touched || submitted)
+          "
+        ></textarea>
+        <small
+          *ngIf="
+            productForm.controls.description.hasError('required') &&
+            (productForm.controls.description.touched || submitted)
+          "
+          class="error"
+          >Campo obrigatório.</small
+        >
+
+        <button
+          class="btn-home"
+          type="submit"
+          [disabled]="productForm.invalid || sending"
+          style="margin-top: 12px"
+        >
+          {{ sending ? "Enviando…" : "Enviar" }}
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

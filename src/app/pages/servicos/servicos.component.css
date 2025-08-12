@@ -1,50 +1,30 @@
+/* Página */
 .page-servicos {
-  margin-top: 100px;
-  margin-bottom: 140px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
+.margin {
+  margin-top: 60px;
+}
+
+/* Títulos */
 .title {
   text-align: center;
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 1.8rem);
+  font-weight: 700;
+  margin-bottom: 6px;
 }
-
-.custom-card {
-  background-color: #1e1e1e;
-  color: white;
-  margin-top: 40px;
-  padding-top: 20px;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 200, 100, 0.1);
-}
-
-.btn-home {
-  color: white;
-  background: #059bcd;
-  padding: 13px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btn-home:hover {
-  background: #047ba1;
-  transform: scale(1.03);
-  cursor: pointer;
-}
-
-.card {
-  box-shadow: 0 1px 4px 1px #21212133;
-}
-
 .sub-title {
+  margin-top: 16px;
   text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: clamp(1rem, 0.6vw + 0.9rem, 1.25rem);
+  margin-bottom: 18px;
+  color: #555;
 }
 
+/* Linha brilhante centralizada */
 .line-glow {
-  width: 257px;
+  width: clamp(160px, 22vw, 257px);
   height: 4px;
   margin: 0 auto;
   border-radius: 10px;
@@ -52,44 +32,79 @@
   box-shadow: 0 0 10px #059bcd, 0 0 20px #059bcd, 0 0 30px #059bcd;
 }
 
-.title {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 3px;
+/* Cards */
+.card {
+  box-shadow: 0 1px 4px 1px #21212133;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
 }
-
-.sub-title {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-}
-
 .card-title {
   font-weight: 700;
 }
 
-.line-btn {
-  display: flex;
-  justify-content: space-between;
+/* Imagem do card: ocupa largura, limita altura e evita corte agressivo */
+.card-img-top {
+  width: 100%;
+  max-height: 240px; /* limita em telas menores */
+  object-fit: cover; /* mantém proporção e corta suavemente */
 }
 
+/* Corpo do card centralizado */
 .card-body-center {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: center; /* centraliza horizontalmente */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 100%; /* necessário se quiser centralização vertical total */
+  gap: 0.75rem;
 }
 
-.card-img-top {
-  height: 250px; /* ou qualquer altura que você quiser */
-  object-fit: cover; /* corta a imagem e mantém proporção */
-  width: 100%; /* garante que ocupe toda a largura */
+/* Botão */
+.btn-home {
+  color: #fff;
+  background: #059bcd;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-home:hover {
+  background: #047ba1;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
-.margin {
-  margin-top: 120px;
+/* Linha antiga substituída por grid Bootstrap: se ainda usar .line-btn em algum lugar,
+   garanta que não quebre no mobile (opcional manter) */
+.line-btn {
+  display: contents;
+} /* evita forçar flex antigo; usamos a row/cols do Bootstrap */
+
+/* Breakpoints */
+@media (min-width: 768px) {
+  .page-servicos {
+    margin-top: 90px;
+    margin-bottom: 120px;
+  }
+  .card-img-top {
+    max-height: 260px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-img-top {
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-servicos {
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+  .btn-home {
+    width: 100%;
+  } /* full-width no mobile para toque confortável */
 }

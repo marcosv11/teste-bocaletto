@@ -1,53 +1,79 @@
-<div class="row margin">
-  <h3 class="title">Nossos serviços</h3>
-  <p class="sub-title">
-    Soluções completas em impressão, locação e manutenção de impressoras
-  </p>
-</div>
-<div class="line-btn">
-  <div class="card" style="width: 25rem">
-    <img
-      class="card-img-top"
-      src="../../../assets/cartucho-compra.png"
-      alt="Card image cap"
-    />
-    <div class="card-body card-body-center">
-      <h5 class="card-title">COMPRAR</h5>
-      <p class="card-text"></p>
-
-      <button class="btn-home" [routerLink]="'/comprar'" type="button">
-        SAIBA MAIS
-      </button>
+<div class="container page-servicos">
+  <div class="row margin">
+    <div class="col-12">
+      <h3 class="title">Nossos serviços</h3>
+      <p class="sub-title">
+        Soluções completas em impressão, locação e manutenção de impressoras
+      </p>
+      <div class="line-glow"></div>
     </div>
   </div>
 
-  <div class="card" style="width: 25rem">
-    <img
-      class="card-img-top"
-      src="../../../assets/aluguel.png"
-      alt="Card image cap"
-    />
-    <div class="card-body card-body-center">
-      <h5 class="card-title">ALUGAR</h5>
-      <p class="card-text"></p>
-      <button class="btn-home" [routerLink]="'/alugar'" type="button">
-        SAIBA MAIS
-      </button>
+  <div class="row g-4 mt-1">
+    <!-- Card 1 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img
+          class="card-img-top"
+          src="../../../assets/cartucho-compra.png"
+          alt="Compra de cartuchos e toners"
+        />
+        <div class="card-body card-body-center">
+          <h5 class="card-title">COMPRAR</h5>
+          <p class="card-text"></p>
+          <button
+            class="btn-home w-100 w-md-auto"
+            [routerLink]="'/comprar'"
+            type="button"
+          >
+            SAIBA MAIS
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="card" style="width: 25rem">
-    <img
-      class="card-img-top"
-      src="../../../assets/conserto-de-impressora-hp-contato.jpg"
-      alt="Card image cap"
-    />
-    <div class="card-body card-body-center">
-      <h5 class="card-title">MANUTENÇÃO</h5>
-      <p class="card-text"></p>
 
-      <button class="btn-home" [routerLink]="'/manutencao'" type="button">
-        SAIBA MAIS
-      </button>
+    <!-- Card 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img
+          class="card-img-top"
+          src="../../../assets/aluguel.png"
+          alt="Locação de impressoras"
+        />
+        <div class="card-body card-body-center">
+          <h5 class="card-title">ALUGAR</h5>
+          <p class="card-text"></p>
+          <button
+            class="btn-home w-100 w-md-auto"
+            [routerLink]="'/alugar'"
+            type="button"
+          >
+            SAIBA MAIS
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <img
+          class="card-img-top"
+          src="../../../assets/conserto-de-impressora-hp-contato.jpg"
+          alt="Manutenção de impressoras"
+        />
+        <div class="card-body card-body-center">
+          <h5 class="card-title">MANUTENÇÃO</h5>
+          <p class="card-text"></p>
+          <button
+            class="btn-home w-100 w-md-auto"
+            [routerLink]="'/manutencao'"
+            type="button"
+          >
+            SAIBA MAIS
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
